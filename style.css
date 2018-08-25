@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    max-width: 100%;
+    color: #333;
+    margin: 0 3em 0 3em;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #02b3e4;
+}
+
+
+/* header section */
+
+header {
+    height: 100px;
+    margin: 0 0 1.7em 0;
+    border-bottom: 3px solid #7d97ad;
+}
+
+.logo-wrapper {
+    float: left;
+    max-width: 100%;
+}
+
+h1,
+h2 {
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    position: relative;
+    top: 20px;
+    font-size: 2em;
+    margin: 0.2em 0 0.75em 0;
+}
+
+h2 {
+    font-size: 1em;
+    padding: 0.4em 0 0 0;
+    margin: 1em 0 0 0;
+}
+
+
+/* featured section */
+
+h3 {
+    text-align: left;
+}
+
+h4 {
+    margin: 0.1em 0 0.1em 0;
+}
+
+.featured-work {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 1.5em;
+}
+
+.work {
+    flex-basis: calc(33% - 30px);
+    text-align: center;
+}
+
+
+/* footer section */
+
+footer {
+    text-align: center;
+    font-size: 1em;
+    padding: 2em 3em 2.5em 3em;
+    border-top: 2px solid #7d97ad;
+}
+
+.social {
+    margin: 0 1em 0 0;
+}
+
+.social-link {
+    color: #000;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 3px 3px 3px #aaa;
+    padding: 0 1em 0 0;
+}
+
+
+/* css media queries */
+
+@media screen and (max-width: 465px) {
+    body {
+        font-size: 0.74em;
+    }
+    header {
+        margin: 0.75em 0 0.75em 0;
+        border-bottom: 2px solid #7d97ad;
+        height: 70px;
+    }
+    .logo-wrapper {
+        height: 80px;
+        width: 30%;
+    }
+    .featured-work {
+        align-items: center;
+        flex-flow: column;
+        padding-bottom: 1em;
+    }
+    .work {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 466px) and (max-width: 780px) {
+    .featured-work {
+        align-items: center;
+        flex-flow: column;
+        padding-bottom: 1em;
+    }
+    .work {
+        width: 73%;
+    }
+}
